@@ -1,0 +1,73 @@
+DBLP network, part of the Koblenz Network Collection
+===========================================================================
+
+This directory contains the TSV and related files of the dblp-cite network: This is the citation network of DBLP, a database of scientific publications such as papers and books.  Each node in the network is a publication, and each edge represents a citation of a publication by another publication.  In other words, the directed edge (A → B) denotes that publication A cites publication B.  Publications are allowed to cite themselves, and therefore the network contains loops.  The original dataset contains a small number (<100) of erroneous duplicate edges, i.e., a paper citing another paper multiple times.  These have been removed from this version of the dataset. 
+
+
+More information about the network is provided here: 
+http://konect.cc/networks/dblp-cite
+
+Files: 
+    meta.dblp-cite -- Metadata about the network 
+    out.dblp-cite -- The adjacency matrix of the network in whitespace-separated values format, with one edge per line
+      The meaning of the columns in out.dblp-cite are: 
+        First column: ID of from node 
+        Second column: ID of to node
+        Third column (if present): weight or multiplicity of edge
+        Fourth column (if present):  timestamp of edges Unix time
+        Fourth column: timestamp of the edge
+
+
+Use the following References for citation:
+
+@MISC{konect:2017:dblp-cite,
+    title = {DBLP network dataset -- {KONECT}},
+    month = oct,
+    year = {2017},
+    url = {http://konect.cc/networks/dblp-cite}
+}
+
+@inproceedings{konect:DBLP,
+        title = {The {DBLP} Computer Science Bibliography: Evolution,
+                  Research Issues, Perspectives}, 
+        author = {Michael Ley},
+        booktitle = {Proc. Int. Symposium on String Process. and Inf. Retr.}, 
+        year = {2002},
+        pages = {1--10},
+}
+
+@inproceedings{konect:DBLP,
+        title = {The {DBLP} Computer Science Bibliography: Evolution,
+                  Research Issues, Perspectives}, 
+        author = {Michael Ley},
+        booktitle = {Proc. Int. Symposium on String Process. and Inf. Retr.}, 
+        year = {2002},
+        pages = {1--10},
+}
+
+
+@inproceedings{konect,
+	title = {{KONECT} -- {The} {Koblenz} {Network} {Collection}},
+	author = {Jérôme Kunegis},
+	year = {2013},
+	booktitle = {Proc. Int. Conf. on World Wide Web Companion},
+	pages = {1343--1350},
+	url = {http://dl.acm.org/citation.cfm?id=2488173},
+	url_presentation = {https://www.slideshare.net/kunegis/presentationwow},
+	url_web = {http://konect.cc/},
+	url_citations = {https://scholar.google.com/scholar?cites=7174338004474749050},
+}
+
+@inproceedings{konect,
+	title = {{KONECT} -- {The} {Koblenz} {Network} {Collection}},
+	author = {Jérôme Kunegis},
+	year = {2013},
+	booktitle = {Proc. Int. Conf. on World Wide Web Companion},
+	pages = {1343--1350},
+	url = {http://dl.acm.org/citation.cfm?id=2488173},
+	url_presentation = {https://www.slideshare.net/kunegis/presentationwow},
+	url_web = {http://konect.cc/},
+	url_citations = {https://scholar.google.com/scholar?cites=7174338004474749050},
+}
+
+
